@@ -1,0 +1,29 @@
+{
+  "name": "video-mixer",
+  "version": "1.0.0",
+  "description": "AI智能视频混剪平台",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "clean": "rimraf node_modules frontend/node_modules backend/node_modules frontend/dist backend/dist"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.5"
+  },
+  "keywords": [
+    "video",
+    "ai",
+    "mixing",
+    "react",
+    "nodejs"
+  ],
+  "author": "Video Mixer Team",
+  "license": "MIT"
+} 
